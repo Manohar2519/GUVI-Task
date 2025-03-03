@@ -1,0 +1,9 @@
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+python -m venv venv  
+venv\Scripts\activate
+pip install torch torchvision torchaudio transformers flask flask-cors gunicorn
+python app.py
+
+
+IN CMD
+curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"text\": \"Hello\hary_GUVI_Task\Deployment>curl -X POST http://127.0.0.1:5000/predict -H "Cont"}"
